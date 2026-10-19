@@ -25,40 +25,41 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: [], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
-      header: 'My Projects',
+      header: 'Selected Work',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'DSTax - ITBridge to DSTaxConnect',
+          title: 'DSTax - Tax Integration Platform',
           description:
-            'I was initially hired by DSTax as a Freelance/Contract Developer working on their ITBridge product. This product connects ERP/ECommerce applications to the Thompson Reuters Onesource Tax Engine for the purpose of calculating Sales and VAT tax. For two years, I built integrations/plugins for Adobe Commerce, Stripe, Sage Intacct, Acuamtica, Chargebee, Braintree, Magento, and others. I was then hired as the Product Manager in 2022. During that time we were getting approached by other Tax Providers wondering if we could build integrations for their platforms. In order to support this I proposed that we should build a new version from the ground up. This was the approach we ended up going with because we were already going to need to refactor the ITBridge code, so instead we took the opportunity to rebuild and improve the app. By doing this were able to improve the UI/UX of the web application, as well as build a system that was designed to accomadate our growing platform. In addition, under my leadership we implemented automated testing and deployment CI/CD piplines, formalized our issue and bug tracking, centralized our project management and documentation using Jira and Confluence.',
+            'Served as Lead Developer and Project Manager for a tax-integration platform, supporting requirements gathering, setup, troubleshooting, and go-live. Developed and supported integrations involving Acumatica, Chargebee, Sage Intacct, WooCommerce, Magento/Adobe Commerce, Thomson Reuters, Vertex, Sovos, and SureTax. Led the transition from Version 1 to Version 2, broadening provider and platform support, improving UI/UX, and optimizing asynchronous operations for performance and throughput. Migrated production workloads from DigitalOcean to AWS and created client guides and knowledge-base articles.',
           imageUrl:
             'https://raw.githubusercontent.com/AlienCow72/AlienCow72.github.io/5e63b4ad9339239e7dfb14f03ea9827ab11d66d5/src/assets/dstax-logo.png',
-          link: 'https://dstax.com/itbridge/',
+          link: 'https://dstax.com',
         },
         {
-          title: 'Joy Global - Assest Investigation',
+          title: 'Komatsu (Joy Global) - Asset and Facilities Systems',
           description:
-            'During my time interning with Komatsu, my primary project was to analyze and update their assest list in anticipation of their upcoming merger with Komatsu. For this, I went through their manufactuing site and matched the physical machine to the asset entry and compiled the machines specifications. During this project, I discovered over 10 million dollars in unaccounted assests. At the beginning of this project the assests were tracked using a single excel file, as part of my work I converted the excel file into a database stored in Sharepoint and tied the related documetation to the assets.',
+            'Analyzed asset and facilities databases, identifying more than $10 million in previously unidentified asset value that informed the sale of unused assets before Komatsu’s acquisition of Joy Global. Evaluated, selected, and implemented a global mapping platform for facility information. Initiated web automations to reduce manual database maintenance and managed SharePoint sites, data, and input forms to improve accessibility, reduce errors, and support cross-department information sharing.',
           imageUrl:
             'https://raw.githubusercontent.com/AlienCow72/AlienCow72.github.io/5e63b4ad9339239e7dfb14f03ea9827ab11d66d5/src/assets/joyglobal-komatsu-logo.png',
-          link: 'https://example.com',
+          link: 'https://www.komatsu.com',
         },
       ],
     },
   },
   seo: {
-    title: 'Kyle Anderson\'s Portfolio',
-    description: '',
+    title: 'Kyle M. Anderson | Software Development & Systems Integration',
+    description:
+      'Technical professional with software development, systems integration, project management, and client-support experience. Builds and supports software platforms, connects business systems, improves delivery workflows, and translates operational needs into practical technical solutions.',
     imageURL: '',
   },
   social: {
     linkedin: 'kyle-anderson-mke',
-    gitlab:'KMA_DSTax',
+    gitlab: 'KMA_DSTax',
     //twitter: 'arif_szn',
     mastodon: '',
     researchGate: '',
@@ -76,60 +77,55 @@ const CONFIG = {
     discord: '',
     telegram: '',
     website: 'https://kyleanderson.online',
-    phone: '',
-    email: 'andersonktech@icloud.com',
+    phone: '(630) 995-1529',
+    email: 'TheKyleAnderson72@gmail.com',
   },
   resume: {
-    fileUrl:
-      'https://raw.githubusercontent.com/AlienCow72/AlienCow72.github.io/cc0f0a93fa656734187ce53e609a9cdc0dabcd08/src/assets/KyleMAnderson-resume.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: 'KyleMAnderson-resume.pdf', // Served from public/ relative to the deployment base.
   },
   skills: [
     'Python',
     'Django',
     'Flask',
-    'C#',
     'PHP',
-    'AWS',
-    'Docker',
-    'OpenAI/Codex',
-    'Anthropic/Claude',
-    'Jira/Confluence',
-    'Office 365 Enterprise',
-    'Sharepoint',
-    'PostgreSQL',
-    'Git',
+    'C#',
+    'C',
     'REST APIs',
-    'Linux',
-    'MacOS',
-    'Windows',
+    'AWS',
+    'DigitalOcean',
+    'Docker',
+    'NGINX',
+    'GitLab CI/CD',
+    'Microsoft SQL Server',
+    'PostgreSQL',
+    'SQLite',
+    'Git',
+    'GitLab',
+    'SharePoint',
+    'Microsoft 365 Enterprise',
+    'OpenAI / Codex',
+    'Anthropic / Claude Code',
   ],
   experiences: [
     {
-      company: 'DSTax LLC',
-      position: 'Project Manager/Lead Developer',
-      from: 'May 2022',
-      to: 'Sept 2026',
-      companyLink: 'https://dstax.com',
-    },
-    {
-      company: 'DSTax LLC',
-      position: 'Contract Developer',
+      company: 'DSTax Technologies',
+      position: 'Manager',
       from: 'May 2020',
-      to: 'May 2022',
+      to: 'Present',
       companyLink: 'https://dstax.com',
     },
     {
-      company: 'Collectivo Coffee Roasters',
+      company: 'Colectivo Coffee Roasters',
       position: 'Warehouse Associate',
       from: 'June 2019',
       to: 'May 2020',
       companyLink: 'https://colectivo.com',
     },
     {
-      company: 'Komatsu (Hired when the company was Joy Global)',
+      company: 'Komatsu Mining Corp. (Joy Global)',
       position: 'Facilities Management Intern',
       from: 'May 2016',
-      to: 'Dec 2018',
+      to: 'December 2018',
       companyLink: 'https://www.komatsu.com',
     },
   ],
@@ -143,14 +139,15 @@ const CONFIG = {
   ],
   educations: [
     {
-      institution: 'University of Wisconsin - Milwaukee',
-      degree: 'BBA IT Management',
+      institution: 'University of Wisconsin–Milwaukee',
+      degree: 'BBA, Information Technology Management',
       from: '2017',
       to: '2020',
     },
     {
       institution: 'Milwaukee School of Engineering',
-      degree: 'Studied Industrial Engineering and Supply Chain Management - Transfered',
+      degree:
+        'Studied Industrial Engineering and Supply Chain/Operations Management',
       from: '2014',
       to: '2016',
     },
@@ -201,18 +198,9 @@ const CONFIG = {
     displayAvatarRing: true,
 
     // Available themes. To remove any theme, exclude from here.
-    themes: [
-      'luxury',
-      'light',
-      'dark',
-      'black',
-      'coffee',
-      'winter',
-      'dim',
-
-    ],
+    themes: ['luxury', 'light', 'dark', 'black', 'coffee', 'winter', 'dim'],
     // Other themes available
-    unused_themes:[
+    unused_themes: [
       'cupcake',
       'bumblebee',
       'emerald',
@@ -246,7 +234,7 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  // footer: `Made with <a 
+  // footer: `Made with <a
   //     class="text-primary" href="https://github.com/arifszn/gitprofile"
   //     target="_blank"
   //     rel="noreferrer"
